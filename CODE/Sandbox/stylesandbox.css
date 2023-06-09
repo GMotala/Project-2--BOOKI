@@ -3,7 +3,7 @@ body {
 }
 
 .solid {
-  border: 5px solid red;
+  border: 5px solid blue;
 }
 .border{
   border-style: solid solid;
@@ -29,28 +29,32 @@ body {
   margin: solid;
   background-color: teal;
 }
+
 .flexBox{
   border: solid;
   padding: 15px;
-  margin-bottom: 15px;
+  margin: 15px;
   display: flex;
-  flex: wrap;
-  flex-direction: row;
-  flex-flow:row;
+  background-color: coral;
+  justify-content: space-between;
+}
+#menuBar{
+  background-color: green;
+}
+/*.flexBox is the parent box, and dictates the form of the item within(flexBoxItem) how do I organise my drawer? */
+/*responsiveness --> if screen + max-width is... then,*/
+@media screen and (max-width: 500px) {
+  .flexBox{
+    flex-direction: column-reverse;
+  }
+}
+.flexBoxItem{
+  background-color: bisque;
+  padding: 10px;
+  margin: 20px;
+  width: 200px;
 }
 
-.item1{
-  border: dotted;
-  display: flex;
-}
-.item2{
-  border: solid;
-  display: flex;
-}
-.item3{
-  border: inset;
-  display: flex;
-}
 .bold{
 font-weight: bold;
 }
@@ -72,4 +76,11 @@ font-weight: bold;
   margin: 15px;
   border-style: inset;
   border-color: blue;
+}
+
+#searchBar{
+  display: flex;
+  border-color: red blue; /* top and bottom the same, l&r the same*/
+  border-style: solid dashed;
+  border-width: 3px 10px;
 }

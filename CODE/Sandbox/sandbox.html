@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/4870ebed7a.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="stylesandbox.css">
 </head>
 
 <body>
@@ -41,10 +41,13 @@
   </div>
   <section class="bigContainer">
     <h2>Divs aligned with flexbox</h2>
-    <div class="flexBox">
-      <div class="item1">box1</div>
-      <div class="item2">box2</div>
-      <div class="item3">box3</div>
+    <div class="flexBox" id="headerBar">
+      <i class="fa-solid fa-house"></i>
+      <div class="flexBoxItem">Logo</div>
+      <div class="flexBox" id="menuBar">
+        <div class="flexBoxItem">Hébergement</div>
+        <div class="flexBoxItem">Activités</div>
+      </div>
     </div>
   </section>
 
@@ -58,8 +61,6 @@
 
   <div class="icons">
     <h2>Text with icons in it</h2>
-    <i class="fa-thin fa-house"></i>
-    <i class="fa-thin fa-bell"></i>
     <i class="fa-solid fa-bell"></i>
     <i class="fa-sharp fa-solid fa-bell fa-rotate-90"></i>
   </div>
