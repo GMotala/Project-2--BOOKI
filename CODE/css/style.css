@@ -158,6 +158,10 @@ margin:0; /* resets the built-in css from browser */
   border-radius: 10px;
 }
 
+#hebergementBox a{
+  width: 28%;
+}
+
 #hebergementBoxTitle {
   padding-top: 17px;
   padding-left: 1px;
