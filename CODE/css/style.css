@@ -32,6 +32,10 @@ margin:0; /* resets the built-in css from browser */
   background-color: white; 
 }
 
+#logo{
+  margin-left: 40px;
+}
+
 .headerItem{ 
   padding-top: 20px;
   background-color: white;
