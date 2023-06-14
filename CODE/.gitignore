@@ -1,0 +1,5 @@
+#Ignore Sandbox folder
+/Sandbox
+
+# Ignore Mac system files
+.DS_store

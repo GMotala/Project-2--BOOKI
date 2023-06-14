@@ -167,7 +167,7 @@ margin:0; /* resets the built-in css from browser */
 }
 
 #hebergementBoxTitle {
-  padding-top: 17px;
+  padding-top: 30px;
   padding-left: 30px;
   padding-bottom: 15px;
 }
@@ -177,6 +177,7 @@ margin:0; /* resets the built-in css from browser */
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 30px;
+  padding-top: 18px;
   padding-right: 15px;
 }
 
@@ -228,6 +229,7 @@ margin:0; /* resets the built-in css from browser */
   justify-content: space-between;
   padding-top: 17px;
   padding-left: 15px;
+  padding-top: 30px;
   padding-bottom: 15px;
 }
 
@@ -240,6 +242,7 @@ margin:0; /* resets the built-in css from browser */
   flex-direction: column;
   justify-content: space-between;
   padding-left: 15px;
+  padding-top: 18px;
   padding-right: 20px;
 }
 
