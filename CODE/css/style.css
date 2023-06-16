@@ -26,6 +26,7 @@ p {
   display: flex;
   justify-content: space-between;
   background-color: white;
+  margin: 10px;
 }
 
 #headerBar {
@@ -361,4 +362,84 @@ p {
   flex-direction: column;
   vertical-align: bottom;
   padding-top: 10px;
+}
+
+/*---------------------------------------------------*/
+/*---------------- TABLET -----------------------*/
+/*---------------------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+
+    #mainContainer {
+        background-color: white;
+    }
+    #logo {
+        margin: 30px;
+    }
+  .sectionBox {
+      flex-direction: column;
+  }
+  #hebergementBox {
+      margin-bottom: 40px;
+      width: 100%;
+  }
+
+#populairesBox {
+    width: 100%;
+}
+
+#populairesBoxTitle {
+    padding-top: 18px;
+    padding-left: 20px;
+}
+
+#populairesBoxList{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+  #populairesBoxList a {
+      display: inline-block;
+      width: 30%;
+  }
+.populairesCard {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-right: 5px;
+}
+
+  #activiteBox {
+      width: 100%;
+  }
+
+  .activiteCardImage img {
+      height: 200px;
+  }
+
+#footerBox {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    margin: 20px 10px 10px 20px;
+}
+}
+
+/*---------------------------------------------------*/
+/*---------------- MOBILE -----------------------*/
+/*---------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    .sectionBox {
+        flex-direction: column-reverse;
+    }
+
+  #headerBox {
+      flex-direction: column;
+      align-items: center;
+  }
+
 }
