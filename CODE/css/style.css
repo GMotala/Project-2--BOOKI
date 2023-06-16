@@ -1,286 +1,303 @@
 body {
-  font-family: 'Raleway', sans-serif;
-  margin: 0;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
-#mainContainer {
-max-width: 1440px;
-margin: 0 auto;
-background-color: white;
-} /* centers the whole page */
 
-h2, h3, p {
-margin:0; /* resets the built-in css from browser */
+#mainContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* centers the whole page */
+
+h2,
+h3,
+p {
+    margin: 0;
+    /* resets the built-in css from browser */
 }
 
 /*---------------------------------------------------*/
 /*---------------- HEADER BAR------------------------*/
 /*---------------------------------------------------*/
 
-#mainTop{
-  margin: 40px;
-}
-#headerBox{
+#headerBox {
   display: flex;
   justify-content: space-between;
   background-color: white;
 }
 
-#headerBar{
+#headerBar {
   display: flex;
   justify-content: space-between;
-  width: 200px; /* GM 12/04/2023: is the layer behind the 2 menuItems */
-  background-color: white; 
+  width: 200px;
+  /* GM 12/04/2023: is the layer behind the 2 menuItems */
+  background-color: white;
 }
 
-#logo{
-  margin-left: 40px;
-}
-
-.headerItem{ 
+.headerItem {
   padding-top: 20px;
-  background-color: white;
-  border-top: 3px solid transparent ; /*need to repeat the border-top here so that it doesnt push down the words later. */
+  border-top: 3px solid transparent;
+  /*need to repeat the border-top here so that it doesnt push down the words later. */
 }
 
-.headerItem:hover{
+.headerItem:hover {
   color: #0065FC;
-  border-top: 3px solid #0065FC ;
+  border-top: 3px solid #0065FC;
 }
 
+#mainTop {
+    margin: 40px;
+}
 
 /*---------------------------------------------------*/
 /*---------------- SEARCH BAR------------------------*/
 /*---------------------------------------------------*/
 
-#searchBar{
-  display: flex;
-  margin-bottom: 20px;
-  margin: 40px;
+#searchBar {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-#searchIcon{
-  display: flex;
-  justify-content: center;
-  align-items: center; /* to manage vertical alignment*/ 
-  background-color: #F2F2F2;
-  width: 70px;
-  border-radius: 10px 0 0 10px;
+#searchIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* to manage vertical alignment*/
+    background-color: #F2F2F2;
+    width: 70px;
+    border-radius: 10px 0 0 10px;
 }
 
-#searchInput{
-  border:2px solid #F2F2F2;
-  height: 45px;
-  width: 110px;
-}
-#searchButton{
-  background-color: #0065FC;
-  color: white;
-  font-weight: bold;
-  border-radius: 0 10px 10px 0;
-  border: none;
-  width: 95px;
+#searchInput {
+    border: 2px solid #F2F2F2;
+    height: 45px;
+    width: 110px;
 }
 
+#searchButton {
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    width: 95px;
+}
 
 /*---------------------------------------------------*/
 /*---------------- FILTER BAR------------------------*/
 /*---------------------------------------------------*/
-#filterBar{
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  margin: 40px;
+#filterBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-#filterItemList{
-  display:flex;
+#filterItemList {
+    display: flex;
 }
 
-.filterItem{ /* selector: selects a tag within a parent --> how you select the item on the html*/
-  display: flex;
-  margin: 10px;
-  border: 3px solid #F2F2F2;
-  border-radius: 20px;
-  padding: 10px;
-  color:black;
-  font-weight: bold;
+.filterItem {
+    /* selector: selects a tag within a parent --> how you select the item on the html*/
+    display: flex;
+    margin: 10px;
+    border: 3px solid #F2F2F2;
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
 }
 
 .filterItem:hover {
-  background-color: #DEEBFF;
+    background-color: #DEEBFF;
 }
 
-.filterItem p{ /* selector: selects a tag within a parent*/
-  padding-left: 10px;
+.filterItem p {
+    /* selector: selects a tag within a parent*/
+    padding-left: 10px;
 }
 
-#filterInfo{
-  display: flex;
-  justify-content: left; /* not necessary as flexbox is set to left by default */ 
-  margin-bottom: 20px;
-  margin-left: 40px;
-  align-items: center;
+#filterInfo {
+    display: flex;
+    justify-content: left;
+    /* not necessary as flexbox is set to left by default */
+    margin-bottom: 20px;
+    align-items: center;
 }
 
-#filterIcon{
-  display: flex;
-  justify-content: center; /* aligning horizontally*/
-  align-items: center; /* aligning vertically*/
-  border-radius: 100px;
-  border: 2px solid #D9D9D9;
-  width: 24px;
-  height: 24px;
-  color: #0065FC;
+#filterIcon {
+    display: flex;
+    justify-content: center;
+    /* aligning horizontally*/
+    align-items: center;
+    /* aligning vertically*/
+    border-radius: 100px;
+    border: 2px solid #D9D9D9;
+    width: 24px;
+    height: 24px;
+    color: #0065FC;
 }
-#filterTextInformation{
- padding: 8px;
 
+#filterTextInformation {
+    padding: 8px;
+}
+
+.blueIcon {
+    color: #0065FC;
+}
+
+.greyIcon {
+    color: #F2F2F2;
 }
 
 /*---------------------------------------------------*/
 /*---------------- HEBERGEMENT & LES PLUS POPULAIRES-----*/
 /*---------------------------------------------------*/
 
-.blueIcon {
-  color:#0065FC;
-}
-
-.greyIcon {
-  color: #F2F2F2;
-}
-
 .sectionBox {
   display: flex;
   justify-content: space-between;
   border-radius: 15px;
-  margin: 40px;
 }
 
-#hebergementBox {
-  width: 67%;
-  background: #F2F2F2;
-  border-radius: 10px;
+#hebergementBox{
+    width: 67%;
+    border-radius: 10px;
+    background: #F2F2F2;
 }
-
-#hebergementBox a{
-  width: 28%;
-}
+#hebergementBox a {
+    width: 30%;
+    height: 38%;
+}               /*review the a section*/
 
 #hebergementBoxTitle {
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 15px;
 }
 
 #hebergementBoxList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-left: 30px;
-  padding-top: 18px;
-  padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-top: 18px;
+    padding-right: 30px;
 }
 
 .hebergementCard {
-  background-color: white;
-  padding: 10px;
-  border-radius: 20px;
-  margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 25px;
 }
 
-.hebergementCardImage{
-  width: 100%;
+.hebergementCardImage {
+    width: 100%;
 }
 
-.hebergementCardImage img{
-  height: 140px;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0 ;
-  width:100%;
-  vertical-align: bottom;
+.hebergementCardImage img {
+    height: 130px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    vertical-align: bottom;
+    margin-bottom: 10px;
 }
-/* image that is within the div will be changed*/
 
-.hebergementTitle{
-  margin-bottom: 8px;
+.hebergementTitle {
+    margin-bottom: 8px;
 }
 
 .hebergementPrice {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
-#hebergementBoxFooter{
-  padding-top: 17px;
-  padding-left: 30px;
-  padding-bottom: 20px;
+
+#hebergementBoxFooter {
+    padding-top: 17px;
+    padding-left: 30px;
+    padding-bottom: 20px;
 }
 
 /*---------------------------------------------------*/
 /*---------------- LES PLUS POPULAIRES-----*/
 /*---------------------------------------------------*/
+
 #populairesBox {
-  width: 30%;
-  background: #F2F2F2;
-  border-radius: 10px;
-  padding-right: 10px; /*necessary?*/
+    width: 30%;
+    border-radius: 10px;
+    background: #F2F2F2;
 }
+
+#populairesBox a {
+    width: 95%;
+    height: 20%;
+}  /* IS THIS NECESSARY*/ 
 
 #populairesBoxTitle {
-  display:flex;
-  justify-content: space-between;
-  padding-top: 17px;
-  padding-left: 15px;
-  padding-top: 30px;
-  padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
 }
 
-#populairesIcon{
-  padding-right: 10px;
-  color: #0065FC;
+#populairesIcon {
+    padding-right: 10px;
+    color: #0065FC;
 }
+
 #populairesBoxList {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 15px;
-  padding-top: 18px;
-  padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-top: 18px;
+    padding-right: 20px;
 }
+
 
 .populairesCard {
-  display: flex;
-  background-color: white;
-  border-radius: 20px;
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 10px;
-  padding-right: 1px;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    /*width: 100%*/ /*the width of the card is dictated by the list padding*/ 
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
-.populairesCardImage{
-  width: 40%;
-  vertical-align: bottom;
+.populairesCardImage {
+    width: 40%;
 }
-.populairesCardImage img{
-  height: 170px;
-  object-fit: cover; 
-  border-radius: 20px 0 0 20px;
-  width:100%;
-  vertical-align: bottom;
+
+.populairesCardImage img {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+    width: 100%;
+    vertical-align: bottom;
+    max-height: 100%;
 }
 
 .populairesCardText {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 60%;
-  padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding-left: 10px;
 }
 
-.populaireTitle{
-  margin-bottom: 8px;
+.populaireTitle {
+    margin-bottom: 8px;
 }
+
 .populairePrice {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 /*---------------------------------------------------*/
@@ -288,262 +305,60 @@ margin:0; /* resets the built-in css from browser */
 /*---------------------------------------------------*/
 
 #activiteBox {
-  margin:0 40px;
+    margin-top: 40px;
 }
 
 #activiteBoxTitle {
-  padding-top: 17px;
-  padding-left: 15px;
-  padding-bottom: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
 }
 
-#activiteBoxList{
-display: flex;
-justify-content: space-between;
+#activiteBoxList {
+    display: flex;
+    justify-content: space-between;
 }
 
-.activiteCard{
-  border-radius: 20px;
-  width: 23%;
-  margin-bottom: 20px;
-  box-shadow: 2px 2px 5px 5px #d9d9d9;
+.activiteCard {
+    border-radius: 20px;
+    width: 23%; /* IS THIS THE BEST WAY TO ORGANISE THE SIZE OF THE CARD*/
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px 5px #d9d9d9;
 }
 
-.activiteCardImage img{
-  width: 100%;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
-  height: 380px;
-  vertical-align: bottom;
+.activiteCardImage img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    height: 380px;
+    vertical-align: bottom;
 }
 
-.activiteCardTitle { /*bottom border disappearing into background*/
-  padding-top:10px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  padding-left:10px;
+.activiteCardTitle {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
 }
 
 /*---------------------------------------------------*/
 /*---------------- Footer -----------------------*/
 /*---------------------------------------------------*/
 
-#footerBox{
-  display:flex;
+#footerBox {
+  display: flex;
   justify-content: space-between;
   background-color: #F2F2F2;
   padding: 40px;
 }
 
-.footerItem{
-  width: 33%;
-  padding: 10px;
-  margin-bottom: 10px;
+.footerItem {
+    width: 33%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-.footerItemText{
-  display:flex;
+.footerItemText {
+  display: flex;
   flex-direction: column;
   vertical-align: bottom;
   padding-top: 10px;
-}
-/*---------------------------------------------------*/
-/*---------------- TABLET -----------------------*/
-/*---------------------------------------------------*/
-@media screen and (max-width: 1024px) {
-  #mainContainer{
-    background-color: white;
-  }
-
-/* everything left and right is aligned but done correctly? sometimes margin, sometimes width(boxes) % */
-  .sectionBox {
-    flex-direction: column;
-  }
-  #hebergementBox {
-    margin-bottom: 40px;
-    width: 98%;
-  }
-  #hebergementBoxTitle {
-    padding-top: 18px;
-    padding-left: 20px;
-    padding-bottom: 18px;
-  }
-  #populairesBox{
-    width: 98%;
-  }
-  #populairesBoxTitle {
-    padding-top: 18px;
-    padding-left: 20px;
-    padding-bottom: 18px
-  }
-  #populairesBoxList {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 25px;
-  }
-
-  #populairesBoxList a{
-    display: inline-block;
-    width: 30%;
-  }
-
-  .populairesCard{
-    display: flex;
-    background-color: white;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-  } 
-
-  #activiteBox{
-    width: 90% ;
-  }
-
-  .activiteCardImage img{
-    height: 200px;
-  }
-  /* seems wider in the maquette*/ 
-
-  #footerBox{
-    display:flex;
-    justify-content: space-between;
-    background-color: #F2F2F2;
-    margin: 40px 10px 10px 40px;
-  }
-  /*grey footer seems huge? is margin correct? removed padding*/
-}
-
-/*---------------------------------------------------*/
-/*---------------- MOBILE -----------------------*/
-/*---------------------------------------------------*/
-
-@media screen and (max-width: 768px) {
-  .sectionBox{
-    flex-direction: column-reverse;
-  }
-  /*---------------- Header -->flexbox for headerbar to be underlogo   -----------------------*/
-  #headerBox{
-    flex-direction: column;
-    align-items: center;
-  }
-  #headerBar{
-    width: 100%; /* GM 12/04/2023: is the layer behind the 2 menuItems */
-  }
-
-  .headerItem{
-    width: 50%;
-    text-align: center; /* aligns horizontally */ 
-    border-bottom: 3px solid transparent; /* makes room in the item so that when you mouse over, it doesnt push the margin down*/ 
-  }
-
-  .headerItem:hover{
-    border-top: 3px solid transparent ;
-    border-bottom: 3px solid #0065FC ;
-  }
-
-/*---------------- Search bar --> take 1 line   -----------------------*/
-
-/*---------------- Filters --> logos use 2 lines (flexbox)   -----------------------*/
-#filterBar{ 
-  flex-direction: column;
-  align-items: start;
-}
-
-#filterItemList{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.filterItem{
-  width: 35%;
-} 
-
-
-#populairesBox{
-  width: 80%;
-}
-#populairesBoxTitle {
-  padding-top: 18px;
-  padding-left: 20px;
-  padding-bottom: 18px
-}
-#populairesBoxList {
-  display: flex;
-  flex-direction:column;
-  align-items: start;
-}
-
-#populairesBoxList a{
-  display: inline-block;
-  width: 100%;
-}
-
-.populairesCard{
-  background-color: white;
-  height: 146px;
-  margin-bottom: 20px;
-} 
-
-/*---------------- Hebergement  -----------------------*/
-#hebergementBox{
-  width: 80%;
-  background-color: white;
-  width: 100%;
-}
-#hebergementTitle {
-  padding-top: 18px;
-  padding-left: 20px;
-  padding-bottom: 18px
-}
-#hebergementBoxList {
-  flex-direction:column;
-  align-items: start;
-}
-
-#hebergementBoxList a{
-  display: inline-block;
-  width: 80%;
-}
-
-.hebergementCard{
-  background-color: white;
-  width: 100%;
-  margin-bottom: 25px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-} 
-
-
-/*---------------- Activités --> wider card, 1 card under next   -----------------------*/
-#activiteBox{
-  width: 80%;
-  background-color: white;
-}
-#activiteTitle {
-  padding-top: 18px;
-  padding-left: 20px;
-  padding-bottom: 18px
-}
-#activiteBoxList {
-  flex-direction:column;
-  align-items: start;
-}
-
-
-.activiteCard{
-  align-items: flex-start;
-  background-color: white;
-  width: 335px;
-  height: 215px;
-  margin-bottom: 25px;
-  padding: 50px 19px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-} 
-
-/*---------------- Filter --> grey background, 1 footerItemText under next   -----------------------*/
-#footerBox{
-  flex-direction:column;
-}
-
 }
