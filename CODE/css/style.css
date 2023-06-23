@@ -25,7 +25,6 @@ p {
 #headerBox {
   display: flex;
   justify-content: space-between;
-  background-color: white;
   margin: 10px;
 }
 
@@ -34,7 +33,6 @@ p {
   justify-content: space-between;
   width: 200px;
   /* GM 12/04/2023: is the layer behind the 2 menuItems */
-  background-color: white;
 }
 
 .headerItem {
@@ -79,7 +77,10 @@ p {
     padding-left: 10px;
 }
 
-#searchButton {
+#searchButtonText{ display:block;}
+#searchButtonIcon{display: none;}
+
+.searchButton {
     background-color: #0065FC;
     color: white;
     font-weight: bold;
@@ -195,6 +196,7 @@ p {
     padding: 10px;
     border-radius: 20px;
     margin-bottom: 25px;
+    height: 230px;
 }
 
 .hebergementCardImage {
@@ -366,9 +368,6 @@ p {
 
 @media screen and (max-width: 1024px) {
 
-    #mainContainer {
-        background-color: white;
-    }
     #logo {
         margin: 30px;
     }
@@ -421,7 +420,6 @@ p {
     margin: 20px 10px 10px 20px;
 }
 }
-
 /*---------------------------------------------------*/
 /*---------------- MOBILE -----------------------*/
 /*---------------------------------------------------*/
@@ -468,11 +466,14 @@ p {
   }
 
   /*---------------- Search Button -----------------------*/
-  .searchButton {
-      /* <i class="fa-solid fa-magnifying-glass"></i> */
+
+  #searchButtonText {
+      display: none;
   }
 
-  /*TO DO SEARCH BUTTON: NONE*/
+  #searchButtonIcon {
+      display: block;
+  }
 
 /*---------------- populaires --> 1 card, 1 line   -----------------------*/
   #populairesBox {
@@ -493,7 +494,6 @@ p {
 /*---------------- Hebergement -----------------------*/
   #hebergementBox {
       width: 100%;
-      background-color: white;
   }
 
   #hebergementBoxList {
@@ -508,12 +508,11 @@ p {
 .hebergementCard {
     background-color: white;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-    /* height: 207px;  killed this +margin bottom */
+    height: 220px;
 }
 /*---------------- Activités -----------------------*/
   #activiteBox {
       width: 100%;
-      background-color: white;
   }
 
   #activiteBoxList {
@@ -523,7 +522,6 @@ p {
   }
 .activiteCard {
     align-items: flex-start;
-    background-color: white;
     width: 90%;
     padding: 10px 10px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
