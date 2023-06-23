@@ -476,7 +476,12 @@ p {
       display: flex;
       flex-direction: column;
       align-items: start;
-  }/* NO NEED TO ADJUST BOXTITLE AND CARD AS PER PREVIOUSLY*/
+  }
+
+  #populairesBoxList a {
+      display: inline-block;
+      width: 100%;
+  } /* NO NEED TO ADJUST BOXTITLE AND CARD AS PER PREVIOUSLY*/
 
 /*---------------- Hebergement -----------------------*/
   #hebergementBox {
@@ -519,7 +524,7 @@ p {
 }
   /*---------------- Filter --> grey background, 1 footerItemText under next   -----------------------*/
   #footerBox {
-      flex-direction: column;
+    flex-direction: column;
   }
 
 }
