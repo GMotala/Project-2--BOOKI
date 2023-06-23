@@ -68,7 +68,7 @@ p {
     align-items: center;
     /* to manage vertical alignment*/
     background-color: #F2F2F2;
-    width: 70px;
+    width: 50px;
     border-radius: 10px 0 0 10px;
 }
 
@@ -76,6 +76,7 @@ p {
     border: 2px solid #F2F2F2;
     height: 45px;
     width: 110px;
+    padding-left: 10px;
 }
 
 #searchButton {
@@ -86,7 +87,6 @@ p {
     border: none;
     width: 95px;
 }
-
 /*---------------------------------------------------*/
 /*---------------- FILTER BAR------------------------*/
 /*---------------------------------------------------*/
@@ -223,7 +223,6 @@ p {
     padding-left: 30px;
     padding-bottom: 20px;
 }
-
 /*---------------------------------------------------*/
 /*---------------- LES PLUS POPULAIRES-----*/
 /*---------------------------------------------------*/
@@ -234,10 +233,17 @@ p {
     background: #F2F2F2;
 }
 
+#populairesBoxList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 18px;
+} /*removed padding left and right and control this via width and padding in 'a'*/
 #populairesBox a {
-    width: 95%;
+    width: 90%;
     height: 20%;
-}  /* IS THIS NECESSARY*/ 
+    padding-left: 15px;
+}/* THE 'A' IS THE HIGHEST ELEMENT AND CONTROLS THE WIDTH/ PADDING OF EACH CARD*/
 
 #populairesBoxTitle {
     display: flex;
@@ -253,21 +259,11 @@ p {
     color: #0065FC;
 }
 
-#populairesBoxList {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 18px;
-    padding-right: 20px;
-}
-
-
 .populairesCard {
     display: flex;
     background-color: white;
     border-radius: 20px;
-    /*width: 100%*/ /*the width of the card is dictated by the list padding*/ 
+    /* REMOVED width: 100%*/ /*the width of the card is dictated by the list padding*/ 
     margin-bottom: 20px;
     padding: 10px;
 }
@@ -396,7 +392,6 @@ p {
 #populairesBoxList{
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 15px;
     padding-right: 25px;
     padding-bottom: 10px;
 }
@@ -409,7 +404,6 @@ p {
     background-color: white;
     border-radius: 20px;
     margin-bottom: 20px;
-    padding-right: 5px;
 }
 
   #activiteBox {
@@ -442,4 +436,91 @@ p {
       align-items: center;
   }
 
+  #headerBar {
+      width: 100%;
+  }
+
+  .headerItem {
+      width: 50%;
+      text-align: center;
+      /* aligns horizontally */
+      border-bottom: 3px solid transparent; /* makes room in the item so that when you mouse over, it doesnt push the margin down*/
+  }
+
+  .headerItem:hover {
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid #0065FC;
+  }
+
+  #filterBar {
+      flex-direction: column;
+      align-items: start;
+  }
+
+  #filterItemList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .filterItem {
+      width: 42%;
+  }
+
+/*---------------- populaires --> 1 card, 1 line   -----------------------*/
+  #populairesBox {
+      width: 100%;
+  }
+
+  #populairesBoxList {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+  }/* NO NEED TO ADJUST BOXTITLE AND CARD AS PER PREVIOUSLY*/
+
+/*---------------- Hebergement -----------------------*/
+  #hebergementBox {
+      width: 100%;
+      background-color: white;
+      width: 100%;
+  }
+
+  #hebergementBoxList {
+      flex-direction: column;
+      align-items: start;
+  }
+  #hebergementBoxList a {
+      display: inline-block;
+      width: 100%;
+  }
+
+.hebergementCard {
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    /* height: 207px;  killed this +margin bottom */
 }
+/*---------------- Activités -----------------------*/
+  #activiteBox {
+      width: 100%;
+      background-color: white;
+  }
+
+  #activiteBoxList {
+      flex-direction: column;
+      align-items: start;
+  }
+.activiteCard {
+    align-items: flex-start;
+    background-color: white;
+    width: 90%;
+    padding: 10px 10px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+  /*---------------- Filter --> grey background, 1 footerItemText under next   -----------------------*/
+  #footerBox {
+      flex-direction: column;
+  }
+
+}
+

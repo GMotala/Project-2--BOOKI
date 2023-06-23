@@ -493,9 +493,9 @@ p {
     width: 42%;
   }
 
-  #populairesBox {
+  /*/#populairesBox {
     width: 100%;
-  }
+  }*/
 
   #populairesBoxTitle {
     padding-top: 18px;
@@ -503,16 +503,16 @@ p {
     padding-bottom: 18px
   }
 
-  #populairesBoxList {
+  /*#populairesBoxList {
     display: flex;
     flex-direction: column;
     align-items: start;
-  }
+  }*/
 
-  #populairesBoxList a {
+  /*#populairesBoxList a {
     display: inline-block;
     width: 100%;
-  }
+  }*/
 
   .populairesCard {
     background-color: white;
@@ -521,11 +521,11 @@ p {
   }
 
   /*---------------- Hebergement  -----------------------*/
-  #hebergementBox {
+  /*#hebergementBox {
     width: 100%;
     background-color: white;
     width: 100%;
-  }
+  }*/
 
   #hebergementTitle {
     padding-top: 18px;
@@ -533,30 +533,30 @@ p {
     padding-bottom: 18px
   }
 
-  #hebergementBoxList {
+  /*#hebergementBoxList {
     flex-direction: column;
     align-items: start;
-  }
+  }*/
 
-  #hebergementBoxList a {
+  /*#hebergementBoxList a {
     display: inline-block;
     width: 100%;
-  }
+  }*/
 
-  .hebergementCard {
+  /*.hebergementCard {
     background-color: white;
     width: 100%;
     margin-bottom: 25px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     height: 207px;
-  }
+  }*/
 
 
   /*---------------- Activités --> wider card, 1 card under next   -----------------------*/
-  #activiteBox {
+  /*#activiteBox {
     width: 80%;
     background-color: white;
-  }
+  }*/
 
   #activiteTitle {
     padding-top: 18px;
@@ -564,10 +564,10 @@ p {
     padding-bottom: 18px
   }
 
-  #activiteBoxList {
+  /*#activiteBoxList {
     flex-direction: column;
     align-items: start;
-  }
+  }*/
 
 
   .activiteCard {
