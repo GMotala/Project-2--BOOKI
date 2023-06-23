@@ -467,6 +467,13 @@ p {
       width: 42%;
   }
 
+  /*---------------- Search Button -----------------------*/
+  .searchButton {
+      /* <i class="fa-solid fa-magnifying-glass"></i> */
+  }
+
+  /*TO DO SEARCH BUTTON: NONE*/
+
 /*---------------- populaires --> 1 card, 1 line   -----------------------*/
   #populairesBox {
       width: 100%;
@@ -487,7 +494,6 @@ p {
   #hebergementBox {
       width: 100%;
       background-color: white;
-      width: 100%;
   }
 
   #hebergementBoxList {
@@ -501,7 +507,6 @@ p {
 
 .hebergementCard {
     background-color: white;
-    width: 100%;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     /* height: 207px;  killed this +margin bottom */
 }
@@ -512,8 +517,9 @@ p {
   }
 
   #activiteBoxList {
-      flex-direction: column;
-      align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 .activiteCard {
     align-items: flex-start;
@@ -524,7 +530,7 @@ p {
 }
   /*---------------- Filter --> grey background, 1 footerItemText under next   -----------------------*/
   #footerBox {
-    flex-direction: column;
+      flex-direction: column;
   }
 
 }
