@@ -25,7 +25,7 @@ p {
 #headerBox {
   display: flex;
   justify-content: space-between;
-  margin: 10px;
+  padding-left: 10px;
 }
 
 #headerBar {
@@ -38,12 +38,18 @@ p {
 .headerItem {
   padding-top: 20px;
   border-top: 3px solid transparent;
+  color: black
   /*need to repeat the border-top here so that it doesnt push down the words later. */
 }
 
 .headerItem:hover {
   color: #0065FC;
   border-top: 3px solid #0065FC;
+}
+
+.headerItem:hover {
+    text-decoration: none;
+    color: #0065FC;
 }
 
 #mainTop {
@@ -77,7 +83,7 @@ p {
     padding-left: 10px;
 }
 
-#searchButtonText{ display:block;}
+#searchButtonText{display:block;}
 #searchButtonIcon{display: none;}
 
 .searchButton {
@@ -86,7 +92,7 @@ p {
     font-weight: bold;
     border-radius: 0 10px 10px 0;
     border: none;
-    width: 95px;
+    min-width: 50px;
 }
 /*---------------------------------------------------*/
 /*---------------- FILTER BAR------------------------*/
@@ -94,7 +100,12 @@ p {
 #filterBar {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
+}
+
+#filterText{
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 #filterItemList {
@@ -104,7 +115,7 @@ p {
 .filterItem {
     /* selector: selects a tag within a parent --> how you select the item on the html*/
     display: flex;
-    margin: 10px;
+    margin: 0px 10px 20px 0px;
     border: 3px solid #F2F2F2;
     border-radius: 20px;
     padding: 10px;
@@ -199,6 +210,10 @@ p {
     height: 230px;
 }
 
+.hebergementCardText{
+    flex-direction: column;
+    width: 100%
+}
 .hebergementCardImage {
     width: 100%;
 }
@@ -368,6 +383,10 @@ p {
 
 @media screen and (max-width: 1024px) {
 
+    #filterBar {
+        flex-direction: column;
+        align-items: start;
+    }
     #logo {
         margin: 30px;
     }
@@ -405,6 +424,9 @@ p {
     margin-bottom: 20px;
 }
 
+.populairesCardImage img {
+    height: 170px;
+}
   #activiteBox {
       width: 100%;
   }
@@ -459,6 +481,7 @@ p {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      width: 100%;
   }
 
   .filterItem {
@@ -492,7 +515,9 @@ p {
   } /* NO NEED TO ADJUST BOXTITLE AND CARD AS PER PREVIOUSLY*/
 
 /*---------------- Hebergement -----------------------*/
-  #hebergementBox {
+
+
+#hebergementBox {
       width: 100%;
   }
 
