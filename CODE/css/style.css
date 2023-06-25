@@ -11,6 +11,7 @@ body {
 
 /* centers the whole page */
 
+a,  a:visited, a:active {text-decoration:none;}
 h2,
 h3,
 p {
@@ -38,7 +39,6 @@ p {
 .headerItem {
   padding-top: 20px;
   border-top: 3px solid transparent;
-  color: black
   /*need to repeat the border-top here so that it doesnt push down the words later. */
 }
 
@@ -47,10 +47,7 @@ p {
   border-top: 3px solid #0065FC;
 }
 
-.headerItem:hover {
-    text-decoration: none;
-    color: #0065FC;
-}
+
 
 #mainTop {
     margin: 40px;
