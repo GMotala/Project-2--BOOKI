@@ -464,10 +464,6 @@ p {
       border-bottom: 3px solid transparent; /* makes room in the item so that when you mouse over, it doesnt push the margin down*/
   }
 
-  .headerItem:hover {
-      border-top: 3px solid transparent;
-      border-bottom: 3px solid #0065FC;
-  }
 
   #filterBar {
       flex-direction: column;
@@ -555,3 +551,11 @@ p {
 
 }
 
+@media screen and (max-width: 530px) {
+    .filterItem {
+        width: 37%;
+        font-size: medium;
+        
+    }
+
+}
