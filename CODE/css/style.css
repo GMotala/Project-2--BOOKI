@@ -204,7 +204,7 @@ p {
     padding: 10px;
     border-radius: 20px;
     margin-bottom: 25px;
-    height: 230px;
+    height: 240px;
 }
 
 .hebergementCardText{
@@ -412,7 +412,7 @@ p {
 }
   #populairesBoxList a {
       display: inline-block;
-      width: 30%;
+      width: 32%;
   }
 .populairesCard {
     display: flex;
