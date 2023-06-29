@@ -48,6 +48,7 @@ p {
 }
 
 
+
 #mainTop {
     margin: 40px;
 }
@@ -282,7 +283,6 @@ p {
     /* REMOVED width: 100%*/ /*the width of the card is dictated by the list padding*/ 
     margin-bottom: 20px;
     padding: 10px;
-    color: black;
 }
 
 .populairesCardImage {
@@ -464,14 +464,8 @@ p {
       width: 50%;
       text-align: center;
       /* aligns horizontally */
-      border-bottom: 20px solid transparent; /* makes room in the item so that when you mouse over, it doesnt push the margin down*/
-
-    }
-
-.headerItem:hover {
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid #0065FC;
-}
+      border-bottom: 3px solid transparent; /* makes room in the item so that when you mouse over, it doesnt push the margin down*/
+  }
 
 
   #filterBar {
@@ -521,7 +515,6 @@ p {
 
 #hebergementBox {
       width: 100%;
-      background-color: white;
   }
 
   #hebergementBoxList {
@@ -538,10 +531,6 @@ p {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     height: 220px;
 }
-.hebergementCardText {
-    height: 20px;
-}
-
 /*---------------- Activités -----------------------*/
   #activiteBox {
       width: 100%;
@@ -562,5 +551,14 @@ p {
   #footerBox {
       flex-direction: column;
   }
+
+}
+
+@media screen and (max-width: 530px) {
+    .filterItem {
+        width: 37%;
+        font-size: medium;
+        
+    }
 
 }
